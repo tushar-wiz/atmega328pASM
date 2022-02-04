@@ -2,7 +2,7 @@
 ; firstAsm.asm
 ;
 ; Created: 01-02-2022 19:07:19
-; Author : tusha
+; Author : tushar
 ;
 
 
