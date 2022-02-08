@@ -1,9 +1,9 @@
-/*
- * delayMacro.inc
- *
- *  Created: 09-02-2022 00:14:37
- *   Author: tushar
- */ 
+;
+; delayMacro.inc
+;
+; Created: 09-02-2022 00:14:37
+; Author: tushar
+; 
 
 .macro	delayMS
 	push	r18
