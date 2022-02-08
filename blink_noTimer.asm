@@ -29,7 +29,7 @@ START:
 	eor ledR, mask               ; XOR to Toggle ; 1 cycle
 	out PORTB, ledR              ; Toggle Pin ; 1 cycle
 	ldi oLoopR, oVal             ; Load reg with oVal ; 1 cycle
-	
+ 
 O_LOOP:
 	ldi iLoopR_l, LOW(iVal)      ; Load reg with lower byte ; 1 cycle
 	ldi iLoopR_h, HIGH(iVal)     ; Load reg with higher byte ; 1 cycle
