@@ -17,19 +17,19 @@
 	push	maxR
 	push	minR
 
-	ldi		ZL, LOW(@0 * 2)
-	ldi   ZH, HIGH(@0 * 2)
-	ldi   loopCount, @1
+	ldi   	ZL, LOW(@0 * 2)
+	ldi  	ZH, HIGH(@0 * 2)
+	ldi   	loopCount, @1
 	
 	rcall	MIN_MAX_ARRAY
-	out		PORTB, maxR
-	out		PORTD, minR
+	out	PORTB, maxR
+	out	PORTD, minR
 
-	pop		minR
-	pop		maxR
-	pop		loopCount
-	pop		temp
-	pop		ZH
-	pop		ZL
+	pop	minR
+	pop	maxR
+	pop	loopCount
+	pop	temp
+	pop	ZH
+	pop	ZL
 
 .endmacro
