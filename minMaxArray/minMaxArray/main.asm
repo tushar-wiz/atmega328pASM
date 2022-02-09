@@ -22,7 +22,7 @@
 	
 	rjmp START
 	
-	.include "include / maxMinSbr.asm"
+	.include "include/maxMinSbr.asm"
 	
 	
 START:
