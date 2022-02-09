@@ -8,6 +8,7 @@
 	.def	temp = r17
 	.def	maxR = r18
 	.def	minR = r19
+	.def	mask = r20
 
 .macro minMax
 	push	ZL
@@ -16,15 +17,22 @@
 	push	loopCount
 	push	maxR
 	push	minR
+	push	mask
 
 	ldi   	ZL, LOW(@0 * 2)
 	ldi  	ZH, HIGH(@0 * 2)
 	ldi   	loopCount, @1
 	
+	ldi		mask, 0xff
+
 	rcall	MIN_MAX_ARRAY
+
+	out DDRB, mask
+	out DDRD, mask
 	out	PORTB, maxR
 	out	PORTD, minR
 
+	pop	mask
 	pop	minR
 	pop	maxR
 	pop	loopCount
