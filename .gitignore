@@ -1,2 +1,3 @@
 minMaxArray/minMaxArray/Debug/
-minMaxArray/.vs/
+*.vs
+Debug*
