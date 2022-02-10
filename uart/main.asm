@@ -32,7 +32,7 @@ START:
 	ldi ZH, HIGH(string * 2)
 	
 LOOP:
-	lpm temp, Z + 
+	lpm temp, Z+ 
 	putC temp
 	dec loopCount
 	brne LOOP
