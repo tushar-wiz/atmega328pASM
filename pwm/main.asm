@@ -7,7 +7,7 @@
 	
 	.NOLIST
 	.include "m328pdef.inc"
-	.include "include / delayMacro.inc"
+	.include "include/delayMacro.inc"
 	.LIST
 	
 	.def mask = r16
